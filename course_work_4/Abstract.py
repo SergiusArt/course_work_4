@@ -24,3 +24,19 @@ class ConnectAPI(ABC):
         pass
 
 
+class JobSaver(ABC):
+    """
+    Ищет вакансию, добавляет или удаляет
+    """
+
+    @abstractmethod
+    def find_vacation(self, key):
+        pass
+
+    @abstractmethod
+    def add_vacation(self, job):
+        pass
+
+    @abstractmethod
+    def del_vacation(self, job):
+        pass

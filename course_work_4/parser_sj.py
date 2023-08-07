@@ -1,4 +1,4 @@
-from Connect_API import ConnectAPI
+from Abstract import ConnectAPI
 import os
 import requests
 
@@ -38,5 +38,3 @@ class ConnectSuperJob(ConnectAPI):
             return 'данные не найдены'
 
         return {'objects': vacansions_list}
-
-

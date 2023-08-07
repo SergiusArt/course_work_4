@@ -1,4 +1,4 @@
-from Connect_API import ConnectAPI
+from Abstract import ConnectAPI
 import requests
 
 
@@ -11,9 +11,9 @@ class ConnectHh(ConnectAPI):
         pass
 
     def get_vacations(self, find_key):
-        '''
+        """
         Получаем список вакансий в формате json
-        '''
+        """
 
         url = f'https://api.hh.ru/vacancies?text={find_key}'
         response = requests.get(url)
@@ -26,4 +26,3 @@ class ConnectHh(ConnectAPI):
 
         else:
             return response.status_code
-
