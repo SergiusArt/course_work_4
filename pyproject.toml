@@ -8,6 +8,8 @@ packages = [{include = "course_work_4"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+requests = "^2.31.0"
+bs4 = "^0.0.1"
 
 
 [build-system]
